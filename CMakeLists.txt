@@ -20,6 +20,7 @@ add_library(assert src/assert.cpp)
 
 target_include_directories(
   assert
+  SYSTEM
   PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/assert/assert>
